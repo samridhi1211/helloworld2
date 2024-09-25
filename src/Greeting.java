@@ -1,6 +1,6 @@
 public class Greeting {
     public void greet() {
-        System.out.println("hello world");
-        System.out.println("how is everything going?");
+        System.out.println("namaste");
+        System.out.println("how are you?");
     }
 }
