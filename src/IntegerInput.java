@@ -5,8 +5,8 @@ public class IntegerInput {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("input a float value");
-        float float_num = sc.nextFloat();
+       String string_num = sc.nextLine();
 
-        System.out.println("input is :"+ float_num);
+        System.out.println("input is :"+ string_num);
     }
 }
