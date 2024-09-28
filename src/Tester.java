@@ -1,10 +1,11 @@
 
 public class Tester {
     public static void main(String[] args) {
-        int num1 = 5084;
-        double  num2 = 22.33;
-        double sum = num1 + num2;
+        int num = 4343;
+        double doublenum = (double) num;
 
-        System.out.println("sum of " +num1+" and "+ num2 +" is" + sum);
+        System.out.println("value of num"+ num +"converted to the double "+ doublenum);
+          int convertedint = (int) doublenum;
+        System.out.println("value of"+ doublenum+ "converted to int"+ convertedint);
     }
 }
