@@ -10,3 +10,4 @@ public class IntegerInput {
         System.out.println("input is :"+ string_num);
     }
 }
+
