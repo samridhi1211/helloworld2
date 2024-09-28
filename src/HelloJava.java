@@ -1,4 +1,4 @@
-public class hellojava {
+public class HelloJava {
     public static void main(String[] args) {
      boolean flag = true;
      int a = 123;
