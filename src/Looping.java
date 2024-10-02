@@ -10,6 +10,7 @@ public class Looping {
             System.out.println("Invalid input exiting program ");
             System.exit(0);
         }
+
         int[] numbers = new int[n];
         while (n != 0) {
             n -=1;
