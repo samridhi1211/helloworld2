@@ -1,15 +1,23 @@
 package Methods;
 
+import java.util.Scanner;
 public class StringExample {
-    public static void main(StringExample[] args) {
-        String message = greet();
-        System.out.println(message);
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter your name :" );
+        String naam = sc.next();
+        String personalised = myGreet(naam);
+        System.out.print(personalised);
     }
 
-    static String greet(){
-      String greeting = "how are you";
-        return greeting;
+    static String myGreet(String name){
+        String message = "hello " + name ;
+        return message;
     }
+
+
+
 }
 
 
