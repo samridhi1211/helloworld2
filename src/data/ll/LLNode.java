@@ -1,6 +1,6 @@
 package data.ll;
 
 public class LLNode {
-     int value;
-     LLNode next;
+     public int value;
+     public LLNode next;
 }
