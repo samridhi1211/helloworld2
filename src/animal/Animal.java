@@ -28,7 +28,7 @@ public class Animal {
     private boolean domestic = true;
     // All the variables in a class define the state of the class
     // The state is stored in database when we do persistence
-
+// behaviour = methods
     public void speak(){
         System.out.println("Start  speaking ");
     }
@@ -36,5 +36,34 @@ public class Animal {
     public void listen(String words){
         System.out.println("I am using Ears number = "+ears);
         System.out.println("I am listening "+words);
+    }
+    // Encapsulation = Data hiding
+
+
+    public byte getEyes() {
+        return eyes;
+    }
+
+    public void setEyes(byte eyes) {
+        this.eyes = eyes;
+    }
+
+    public boolean isDomestic() {
+        return domestic;
+    }
+
+    public void setDomestic(boolean domestic) {
+        this.domestic = domestic;
+    }
+
+    // Identity
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
     }
 }

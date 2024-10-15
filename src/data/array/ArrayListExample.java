@@ -3,6 +3,17 @@ package data.array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * 1. Data  types in Java
+ * OOP in Java
+ * Inheritance
+ * Interfaces & Inner classes
+ * Exception
+ * Generic Programming
+ * Collections
+ * Concurrency
+ *
+ */
 public class ArrayListExample {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
