@@ -1,10 +1,10 @@
 package Fruits;
 
-public class Fruits {
+abstract  class Fruits {
     private String characteristics= "seeds" ;
 
-
-    public void flavour() {
+   public abstract void flowerColour();
+    public  void flavour() {
         System.out.println("sweet in taste");
     }
 
