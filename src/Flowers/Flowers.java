@@ -7,6 +7,6 @@ public class Flowers {
         System.out.println("reproductive part");
     }
     public void sepal(){
-        System.out.println("protct outer layer");
+        System.out.println("protect outer layer");
     }
 }

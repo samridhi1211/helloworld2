@@ -6,4 +6,13 @@ public class Lion extends Animal{
     public void speak() {
         System.out.println("Roar");
     }
+
+    @Override
+    public void walk() {
+
+    }
+
+    class LionBaby{
+
+    }
 }

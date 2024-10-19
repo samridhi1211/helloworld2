@@ -1,6 +1,6 @@
 package animal;
 
-public class Animal {
+public abstract class Animal {
     private byte eyes = 2;
     private byte nose =1;
     private byte ears = 2;
@@ -39,6 +39,7 @@ public class Animal {
     }
     // Encapsulation = Data hiding
 
+    public abstract void walk();
 
     public byte getEyes() {
         return eyes;
