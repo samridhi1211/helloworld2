@@ -11,15 +11,22 @@ public class PrefixSum {
         System.out.println();
     }
 
-    static int[] makePrefixSumArray(int[] arr) {
-        int n = arr.length;
-        int[] pref = new int[n];
-        pref[0] = arr[0];
 
+//        int n = arr.length;
+//        int[] pref = new int[n];
+//        pref[0] = arr[0];
+//
+//        for (int i = 1; i < n; i++) {
+//            pref[i] = pref[i - 1] + arr[i];
+//        }
+//        return pref;
+//    }
+        static int[] makePrefixSumArray(int[] arr) {
+        int n = arr.length;
         for (int i = 1; i < n; i++) {
-            pref[i] = pref[i - 1] + arr[i];
+            arr[i] = arr[i-1] + arr[i];
         }
-        return pref;
+        return arr;
     }
 
     public static void main(String[] args) {
@@ -34,6 +41,6 @@ public class PrefixSum {
         System.out.println("original array");
         printArray(arr);
         int[] pref = makePrefixSumArray(arr);
-        printArray(pref);
+        printArray(arr);
     }
 }
