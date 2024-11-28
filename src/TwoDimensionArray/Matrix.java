@@ -12,20 +12,20 @@ public class Matrix {
         }
     }
     static void add(int[][] a, int r1, int c1, int[][] b, int r2, int c2) {
-        if (r1 != r2 || c1 != c2) {
+         if (c1 != r2) {
             System.out.println("wrong input - addition not possible");
             return;
         }
 
-        int[][] sum = new int[r1][c1];
+        int[][] add = new int[r1][c1];
         //fill sum array(traversed SUM array)
         for (int i = 0; i < r1; i++) {
             for (int j = 0; j < c1; j++) {
-                sum[i][j] = a[i][j] + b[i][j];
+               add[i][j] = a[i][j] * b[j][i];
             }
         }
-        System.out.println("sum of matrix 1 and matrix 2");
-        printMatrix(sum);
+        System.out.println("multiplication of matrix 1 and matrix 2");
+        printMatrix(add);
     }
 
     public static void main(String[] args) {
@@ -55,6 +55,6 @@ public class Matrix {
         System.out.println("matrix 2");
         printMatrix(b);
 
-        add(a, r1, c1, b, r2, c2);
+       add(a, r1, c1, b, r2, c2);
     }
 }
