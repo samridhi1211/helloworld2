@@ -13,8 +13,8 @@ public class SuffixSum {
 
     static  int[] suffixSum(int[] arr){
         int n = arr.length;                                    //NEED TO WORK ON CODE
-        for(int  i= 1; i<n; i++ ){                                 //LOGIC TO BE IMPLEMENTED
-            arr[i] = arr[i] + arr[i+1];
+        for (int i = n - 2; i >= 0; i--) {
+            arr[i] = arr[i] +arr[i + 1];
         }
         return arr;
     }
