@@ -44,6 +44,7 @@ public class PrintSpiral {
             for(int i= bottomRow ; i>= topRow && totalElement < r * c ; i--){
                 System.out.print(matrix[i][leftCol] + " ");
                 totalElement++;
+
             }
             leftCol++; //moves right
 
