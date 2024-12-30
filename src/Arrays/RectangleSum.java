@@ -9,10 +9,8 @@ public class RectangleSum {
         for(int i =l1; i<=l2; i++){
             for(int j= r1; j<=r2; j++){
                 sum += matrix[i][j];
-
             }
         }
-
         return sum;
     }
 
@@ -23,7 +21,7 @@ public class RectangleSum {
         // traverse horizontally to calculate row-wise prefix Sum
         for(int i=0; i < r; i++){
             for(int j= 1 ; j < c ; j++){
-                matrix[i][j] = matrix[i][j-1];
+                matrix[i][j] += matrix[i][j-1];
             }
         }
     }
@@ -39,7 +37,6 @@ public class RectangleSum {
                 sum += matrix[i][r2];
         }
         return sum;
-
     }
 
 
