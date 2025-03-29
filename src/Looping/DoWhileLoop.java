@@ -1,3 +1,5 @@
+package Looping;
+
 import java.util.Scanner;
 
 public class DoWhileLoop {
@@ -21,5 +23,17 @@ public class DoWhileLoop {
                 System.out.println("exit program");
             }
         }
+    }
+
+    public static class HelloWorld {
+        public static void main(String[] args) {
+            //type name = new type
+
+    //        Greeting greeting = new Greeting();
+    //           //
+    //          greeting.greet();
+
+        }
+
     }
 }

@@ -1,6 +1,5 @@
-import org.w3c.dom.ls.LSOutput;
+package Looping;
 
-import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;
 

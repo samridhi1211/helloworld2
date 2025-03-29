@@ -1,3 +1,5 @@
+package Looping;
+
 import java.util.Scanner;
 
 public class TakeInput {
