@@ -8,9 +8,10 @@ public class Factorial {
             return 1;
         }
 
-        factorial(n-1);
-
-        return n*factorial(n-1);
+        int ansfact = factorial(n-1);
+        int ans = n * ansfact;
+      return ans;
+//        return n*factorial(n-1);
 
     }
 
@@ -18,5 +19,6 @@ public class Factorial {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         System.out.println(factorial(n));
+      
     }
 }
